@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -8,9 +7,9 @@ function Footer() {
   return(
     <Row>
       <Col>
-        <h4>About Free the Captives</h4>
+        <h4>About Us</h4>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt risus in pellentesque posuere. Cras iaculis ornare facilisis. Ut arcu ante, mattis sed arcu ut, volutpat volutpat sapien.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus diam, sed ullamcorper enim. Phasellus congue facilisis congue. Donec et euismod quam. Sed et ligula in lectus vulputate consequat. Nulla congue lacus elit, sed imperdiet ipsum fringilla posuere. Phasellus vel pharetra.
         </p>
       </Col>
       <Col>

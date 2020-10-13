@@ -4,16 +4,19 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Feature from '../../components/Feature';
 
+
 function Home() {
 return (
         <>
         <main id="homepage">
         <Container fluid>
+        
         <section id="mission-section">
         <Row className="mission-statement">
             <Col>
-            <h1>Mission Statement</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo varius dolor, id malesuada est volutpat a.</p>
+            <h1>— Free The Captives Mission —</h1>
+            <p>We rescue and restore teenaged sex trafficking victims by working with law enforcement and providing rescued victims with support groups, mentoring, jobs, material assistance, and other direct services.</p>
+            <button>Learn More</button>
             </Col>
         </Row>
         </section>
@@ -21,8 +24,9 @@ return (
         <div id="mission-image"></div>
         
         <section id="promote-section">
-            <h2>We Need Your Help</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo varius dolor, id malesuada est volutpat a. Nullam et pharetra enim. Integer felis libero, mollis et tincidunt a, hendrerit vitae velit. Proin venenatis metus ex, eu eleifend elit dapibus sed. Aenean volutpat consequat tempus. Suspendisse nibh lacus, placerat ut est quis, scelerisque faucibus nisi.</p>
+            <h2>Human Sex Trafficking in Houston</h2>
+            <p>The average age of girls being trafficked is between the ages of 12 to 14 years old. We also engage and mobilize volunteers from the community while partnering with non-profits and government agencies in the fight against modern day slavery, you can join us in the fight against human slavery.</p>
+            <button>Fight Slavery</button>
         </section>
 
         <Feature />

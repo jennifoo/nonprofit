@@ -1,22 +1,18 @@
 import React from 'react';
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navigation from './components/Navigation';
+import Nav_Enewsletter from './components/Nav_Enewsletter';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Footer from './components/Footer'
-// import Footer from './pages/Footer';
-
-import Navigation from './components/Nav';
 
 function App() {
   return (
       <>
       <Router>
+      <Nav_Enewsletter />
       <Navigation />
       <Switch>
         <Route exact path="/">

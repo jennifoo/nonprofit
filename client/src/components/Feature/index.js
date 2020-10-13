@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -7,14 +6,15 @@ import Col from 'react-bootstrap/Col';
 function Feature() {
   return(
     <>
-    <h3>Buy a Candle, Save a Life</h3>
+    <h3>Get Educated on the Core Issues of Human Trafficking</h3>
     <Row>
       <Col>
         <div className="feature-image"></div>
       </Col>
       <Col>
+        <h4>Houston Human Trafficking Conference</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta fermentum ex. Nulla dignissim tristique rutrum. Suspendisse pulvinar imperdiet turpis ac cursus. Ut malesuada lacus dolor, ut imperdiet lorem porttitor sit amet. In mattis sapien lectus, eget fringilla nisi faucibus ac.
+        Do you want the latest information and updates on human trafficking in Houston? Come to Free the Captives’ 10th Annual Houston Human Trafficking Conference! This is a fantastic opportunity to learn about human trafficking from the experts and how you can get involved in fighting this horrific crime.
         </p>
         <button>Read More</button>
       </Col>
