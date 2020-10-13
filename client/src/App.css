@@ -1,0 +1,21 @@
+
+
+
+body .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#mission-image {
+  background-image: url("./images/free-the-captives-girls-banner.jpg");
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.feature-image {
+  background-color: #eee;
+  height: 250px;
+}
