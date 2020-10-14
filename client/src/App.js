@@ -9,6 +9,8 @@ import Blog from './pages/Blog';
 import Blog_Editor from './pages/Blog_Editor';
 import Footer from './components/Footer'
 
+import { StoreProvider } from "./utils/GlobalState";
+
 
 import { Editor } from "@tinymce/tinymce-react";
 
@@ -57,6 +59,7 @@ function App() {
   return (
     <>
     <Router>
+    <StoreProvider>
     <Nav_Enewsletter />
     <Navigation />
     <Switch>
@@ -77,6 +80,7 @@ function App() {
         <Footer />
       </Route>
     </Switch>
+    </StoreProvider>
     </Router>
     </>
   );
