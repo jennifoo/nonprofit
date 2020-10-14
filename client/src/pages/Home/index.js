@@ -23,12 +23,18 @@ return (
 
         <div id="mission-image"></div>
         
-        <section id="promote-section">
+        <section id="awareness-section">
+        <Row className="awareness-statement">
+            <Col>
             <h2>Human Sex Trafficking in Houston</h2>
             <p>The average age of girls being trafficked is between the ages of 12 to 14 years old. We also engage and mobilize volunteers from the community while partnering with non-profits and government agencies in the fight against modern day slavery, you can join us in the fight against human slavery.</p>
             <button>Fight Slavery</button>
+            </Col>
+        </Row>
         </section>
 
+        <Feature />
+        <Feature />
         <Feature />
         </Container>
         </main>

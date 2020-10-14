@@ -1,21 +1,251 @@
+/* GLOBAL */
 
+#root {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #fff;
+  -webkit-box-shadow: 0 0 11px rgba(1,1,1,0.4);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
 
+#root .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+html h1, html h2, html h3, html h4, html h5, html h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+html, html body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13pt;
+  line-height: 1.75;;
+}
 
 body .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
 
-#mission-image {
+button {
+  border: none;
+  border-radius: 0;
+  font-weight: 600;
+}
+
+/* NAV */
+#nav {
+  background-color: #82d6dd;
+}
+
+#nav a.navbar-brand img{
+  min-height: 100px;
+}
+
+#nav a {
+  color: #000;
+  font-weight: 600;
+  font-size: 10pt;
+  text-transform: uppercase;
+}
+
+#nav-group {
+  border-bottom: solid 1px #000;
+  /* width: 55vw; */
+  width: 1100px;
+}
+
+
+/* Overide Bootstrap */
+@media (min-width: 992px) {
+  nav .nav-item:first-child .nav-link{
+    padding-left: 0 !important;
+  }
+
+   .navbar-collapse .nav-item a.nav-link {
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+}
+
+.enewsletter-bar {
+  background-color: #000;
+  padding: 5px 30px 5px 30px;
+}
+.enewsletter-bar h6 {
+  color: #d1d3d4;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 8pt;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.enewsletter-bar input {
+  background-color: #000;
+  border: none;
+  border-bottom: solid 1px #939598;
+  margin-right: 15px;
+  font-size: 10pt;
+  /* border-style: solid; */
+}
+
+.enewsletter-bar button {
+  font-size: 8pt;
+  background-color: initial;
+  color: #939598;
+  border: solid 1px #939598;
+}
+
+
+
+/* HOME */
+
+/* General */
+
+#homepage h1 {
+  font-size: 1.6rem;
+}
+#homepage h2 {
+  font-size: 1.2rem;
+}
+
+.mission-statement.row button,
+.awareness-statement.row button,
+.feature-section.row button,
+button
+ {
+  border: solid 1px #000;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 9pt;
+  background-color: initial;
+  margin-top: 15px;
+}
+
+/* SECTION: MISSION */
+section#mission-section {
+  background-color: #82d6dd;
+  min-height: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+section#mission-section h1{
+  margin-bottom: 20px;
+}
+#root .mission-statement.row {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+}
+.mission-statement.row p {
+  font-size: 18pt;
+}
+
+/* SECTION: IMAGE */
+
+#mission-image{
   background-image: url("./images/free-the-captives-girls-banner.jpg");
-  height: 400px;
+  height: 550px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* SECTION: AWARENESS */
+section#awareness-section {
+  background-color: #82d6dd;
+  min-height: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 175px;
+}
+section#awareness-section h2{
+  margin-bottom: 20px;
+}
+#root .awareness-statement.row {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.feature-image {
+
+
+/* HOME FEATURE COMPONENT */
+.feature-image img {
+ max-height: 350px;
+ position: absolute;
+ left: -300px;
+ top: 80px;
+}
+
+.feature-section {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.feature-section .col {
+  flex-basis: initial;
+  flex-grow: initial;
+  width: 50vw;
+  max-width: 950px !important;
+  min-width: 300px;
+  padding-right: 8vw;
+  padding-top: 100px;
+  padding-left: 8vw;
+  padding-bottom: 75px;
+  background-color: #fcf5e0;
+
+}
+
+.feature-section h3 {
+  max-width: 800px;
+  font-size: 28pt;
+  color: #16a0a5;
+  position: absolute;
+  left: -300px;
+  top: -50px;
+ }
+
+.feature-section h4 {
+  font-size: 14pt;
+ }
+
+/* Inner Templates */
+.banner-image {
   background-color: #eee;
-  height: 250px;
+}
+.banner-image .col{
+  min-height: 300px;
+  padding: 25px 25px 25px 25px;
+}
+
+.blog-snippet {
+  padding: 25px;
+  padding-right: 30vw;
+}
+
+
+/* Blog Editor */
+.blog-editor {
+  padding: 50px 50px 0 50px;
+}
+
+/* Footer */
+#footer {
+  background-color: #82d6dd;
+  margin-top: 100px;
+  padding: 75px 50px 50px 50px;
+  min-height: 450px;
 }

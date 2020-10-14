@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 function Footer() {
   return(
-    <Row>
+    <Row id="footer">
       <Col>
         <h4>About Us</h4>
         <p>
