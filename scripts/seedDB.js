@@ -14,10 +14,10 @@ const postSeed = [
     author: "Julie Waters, JD",
     post:
       `HeArt for Freedom 2018 is a response by the fine arts community to the challenging reality of human trafficking in the Houston area. When faced with the ugliness of modern day slavery, we can run, we can cower or pretend that we don’t see, or we can stand and combat this darkness with the transformative power of art. And so, we are creating, bringing to live, materializing the imagined, and presenting it at HeArt for Freedom. Come and be changed for the better.
-
+      
       Our Show and Auction is a one-day event where art connoisseurs and socially-minded individuals can purchase world-class pieces and, through their purchases, support Free the Captives, which combats the sex trafficking of minors in Houston. HeArt for Freedom will be hosted on Sept. 29, 2018, by the Church at 1548 Heights, in a historic 1920’s building with a lot of personality and heArt. The event will feature live music, performance painters, art, photography, artisan craft, hors d’oeuvres and more.
       
-  Get your tickets today! <a href="https://www.heartforfreedom.com/">Click Here</a>`,
+      Get your tickets today! <a href="https://www.heartforfreedom.com/">Click Here</a>`,
     date: new Date(Date.now())
   },
   {
