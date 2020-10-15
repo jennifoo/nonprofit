@@ -1,26 +1,36 @@
+/* NEXT STEPS
+- Database seeded with seed file
+- Mongoose Schema setup
+- Get all to display all post to page
+- Login to get access to login page
+- Hide API keys and other sensitive info
+*/
+
 import React, { useRef } from 'react';
 import { Editor } from "@tinymce/tinymce-react";
 import { useStoreContext } from "../../utils/GlobalState";
 import { SHOW_POSTS } from "../../utils/actions";
+import API from "../../utils/API";
 
 function Blog_Editor() {
-  const inputRef = useRef();
+  const titleRef = useRef();
 
   const [state, dispatch] = useStoreContext();
 
-  function handleSubmit(event, editor) {
+  function handleSubmit(event) {
     event.preventDefault();
-    // let value1 = inputRef.current.value;
-    // let value2 = event.target.value;
     // console.log(event);
-    // console.log(value1); // undefined
-    // console.log(value2); // undefined
+    var content = event.target[1].value;
+    // console.log(content);
 
-    // console.log("event", event)
-    // console.log("editor", editor)
-    var value = event.target[0].value;
-    console.log(value);
-    
+    API.savePost({
+      title: titleRef.current.value,
+      post: content
+    })
+    .then(result => {
+      console.log("result", result);
+    })
+    .catch(err => console.log(err));
   }
 
   function handleChange(value, editor) {
@@ -33,6 +43,7 @@ function Blog_Editor() {
       <form>
         <h2>Create a Blog Post</h2>
         <h3>Enter information below</h3>
+        <input name="Title" placeholder="Title" ref={titleRef}></input>
         <Editor
          apiKey="26mjhd3w4g3zkyxeqxkvveljjgkxgo6e91u6g96ira550mw1"
          init={{
