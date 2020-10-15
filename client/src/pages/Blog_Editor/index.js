@@ -5,7 +5,8 @@
 - Login to get access to login page
 - User login and authentication
 - Hide API keys and other sensitive info
-- Get HTML parser
+- Get HTML parser ***DONE***
+- Packages to add: Editor and HTML parser
 */
 
 import React, { useRef, useEffect } from 'react';
@@ -13,6 +14,7 @@ import { Editor } from "@tinymce/tinymce-react";
 import { useStoreContext } from "../../utils/GlobalState";
 import { STORE_RESULTS, ADD_POST } from "../../utils/actions";
 import API from "../../utils/API";
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 
 function Blog_Editor() {
@@ -59,16 +61,21 @@ function Blog_Editor() {
 
   console.log(state);
 
+  let html = function(){
+    return state.posts.map((elem) => (
+    <div key={elem._id} className="result-div">
+      <h2>{elem.title}</h2>
+      <p>{ReactHtmlParser(elem.post)}</p> 
+    </div>
+  ))
+  }
 
   return (
 
+
+
       <main className="blog-editor">
-        {state.posts.map((elem) => (
-          <div key={elem._id} className="result-div">
-            <h2>{elem.title}</h2>
-            <p>{elem.post}</p>
-          </div>
-        ))}
+      {html()}
 
       <form>
         <h2>Create a Blog Post</h2>
@@ -88,6 +95,8 @@ function Blog_Editor() {
       </main>
   )
 }
+
+{/* .substring(0,1000)} [...] */}
 
 
 // class Blog_Editor extends React.Component {
