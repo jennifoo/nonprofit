@@ -1,12 +1,13 @@
 /* NEXT STEPS
-- Database seeded with seed file
-- Mongoose Schema setup
-- Get all to display all post to page
-- Login to get access to login page
+- Database seeded with seed file ***DONE***
+- Mongoose Schema setup ***DONE***
+- Get all to display all post to page ***DONE***
 - User login and authentication
 - Hide API keys and other sensitive info
 - Get HTML parser ***DONE***
-- Packages to add: Editor and HTML parser
+- Packages to add: Editor and HTML Parser ***DONE***
+- Format Blog Editor Page
+- Update Blog Listing Page
 */
 
 import React, { useRef, useEffect } from 'react';
