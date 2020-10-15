@@ -11,18 +11,18 @@ mongoose.connect(
 const postSeed = [
   {
     title: "heART for Freedom – Art Show! Get your tickets today!",
-    authors: "Julie Waters, JD",
+    author: "Julie Waters, JD",
     post:
       `HeArt for Freedom 2018 is a response by the fine arts community to the challenging reality of human trafficking in the Houston area. When faced with the ugliness of modern day slavery, we can run, we can cower or pretend that we don’t see, or we can stand and combat this darkness with the transformative power of art. And so, we are creating, bringing to live, materializing the imagined, and presenting it at HeArt for Freedom. Come and be changed for the better.
 
       Our Show and Auction is a one-day event where art connoisseurs and socially-minded individuals can purchase world-class pieces and, through their purchases, support Free the Captives, which combats the sex trafficking of minors in Houston. HeArt for Freedom will be hosted on Sept. 29, 2018, by the Church at 1548 Heights, in a historic 1920’s building with a lot of personality and heArt. The event will feature live music, performance painters, art, photography, artisan craft, hors d’oeuvres and more.
       
-      Get your tickets today! <a href="https://www.heartforfreedom.com/"></a>}`,
+  Get your tickets today! <a href="https://www.heartforfreedom.com/">Click Here</a>`,
     date: new Date(Date.now())
   },
   {
     title: "Job Openings: Apply Today!",
-    authors: "Julie Waters, JD",
+    author: "Julie Waters, JD",
     post:
       `Houston is one of the top cities in the US for sex trafficking. The average of a girl being trafficked is between 12 to 14 years old. We have several anti-human trafficking job openings located in downtown Houston.
 
@@ -83,7 +83,7 @@ const postSeed = [
   },
   {
     title: "Trafficking conference fees increase Friday! Sign up today to save money!",
-    authors: "Julie Waters, JD",
+    author: "Julie Waters, JD",
     post:
       `Do you want the latest information and updates on human trafficking in Houston? Come to Free the Captives’ 8th Annual Houston Human Trafficking Conference! This is a fantastic opportunity to learn about human trafficking from the following experts:
 
@@ -126,7 +126,7 @@ const postSeed = [
   },
   {
     title: "Will Harvey end our job program for trafficked teens?",
-    authors: "Julie Waters, JD",
+    author: "Julie Waters, JD",
     post:
       `HELP Provide a Job for Trafficked Teens: (Urgent Need)
       Will you help provide our teen trafficking survivors with a job? We have to sell all the candles that our girls made this past summer before we can hire them again. Typically, we sell out by Christmas but due to Hurricane Harvey, several fall markets were cancelled and many of our buyers were flooded. We have sold 2700 candles but we still have 1500 left to sell. WE NEED YOUR HELP!

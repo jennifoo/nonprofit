@@ -3,20 +3,39 @@
 - Mongoose Schema setup
 - Get all to display all post to page
 - Login to get access to login page
+- User login and authentication
 - Hide API keys and other sensitive info
+- Get HTML parser
 */
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Editor } from "@tinymce/tinymce-react";
 import { useStoreContext } from "../../utils/GlobalState";
-import { SHOW_POSTS } from "../../utils/actions";
+import { STORE_RESULTS, ADD_POST } from "../../utils/actions";
 import API from "../../utils/API";
+
 
 function Blog_Editor() {
   const titleRef = useRef();
 
   const [state, dispatch] = useStoreContext();
 
+  useEffect(
+    () => {
+    // AUTOMATICALLY GRAB DB DATA AND STORE INTO STATE
+    API.getDbPost()
+      .then(results => {
+        dispatch({
+          type: STORE_RESULTS,
+          postsDb: results.data
+        })
+        // console.log(results.data);  // Array of objects containing keys: id, author, title, post
+      }).catch(err => console.log(err));
+    },
+    []
+  );
+
+  // SUBMIT POST AND ADD TO DATABASE
   function handleSubmit(event) {
     event.preventDefault();
     // console.log(event);
@@ -28,18 +47,29 @@ function Blog_Editor() {
       post: content
     })
     .then(result => {
-      console.log("result", result);
+      // console.log("result", result); // NOTE: res.json returns back the object that was created, not the entire table.
+      dispatch({
+        type: ADD_POST,
+        post: result.data
+      });
     })
     .catch(err => console.log(err));
+
   }
 
-  function handleChange(value, editor) {
-    // console.log("HC content", value);
-    // console.log("HC editor", editor);
-  }
+  console.log(state);
+
 
   return (
+
       <main className="blog-editor">
+        {state.posts.map((elem) => (
+          <div key={elem._id} className="result-div">
+            <h2>{elem.title}</h2>
+            <p>{elem.post}</p>
+          </div>
+        ))}
+
       <form>
         <h2>Create a Blog Post</h2>
         <h3>Enter information below</h3>
@@ -50,7 +80,6 @@ function Blog_Editor() {
             height: 500,
             menubar: false
         }} 
-        onEditorChange={handleChange}
         onSubmit={handleSubmit} />
 
         <br />

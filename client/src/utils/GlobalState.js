@@ -1,11 +1,22 @@
 import React, { createContext, useReducer, useContext } from "react";
-import { ADD_POST } from "./actions";
+import { STORE_RESULTS, ADD_POST } from "./actions";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
 
 const reducer = (state, action) => {
   switch (action.type) {
+
+    case STORE_RESULTS:
+      return {
+        ...state,
+        posts: action.postsDb
+      };
+    case ADD_POST:
+      return {
+        ...state,
+        posts: [...state.posts, action.post]
+      };
 
   // STORE SEARCH RESULTS
   // case SHOW_POSTS:
@@ -40,12 +51,7 @@ const reducer = (state, action) => {
 
 const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
-    posts: [
-      {
-        title: "Title",
-        body: "Lorem ipsum dolor set amet lorem ipsum dolor set amet lorem ipsum set amet."
-      }
-  ]
+    posts: []
   });
 
   return <Provider value={[state, dispatch]} {...props} />;
@@ -56,3 +62,8 @@ const useStoreContext = () => {
 };
 
 export { StoreProvider, useStoreContext };
+
+/* 
+     posts: action.payload
+    posts: [action.payload, ...state.posts]
+*/
