@@ -37,6 +37,12 @@ button {
   font-weight: 600;
 }
 
+.page-padded {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 75px;
+}
+
 /* NAV */
 #nav {
   background-color: #82d6dd;
