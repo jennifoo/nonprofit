@@ -16,7 +16,7 @@ useEffect(() => {
   API.getPost(id)
     .then(result => {
       // Returns the document that was requested by Id
-      console.log(result.data)
+      // console.log(result.data)
       dispatch({
         type: SET_CURRENT_POST,
         currentPst: result.data
@@ -26,10 +26,10 @@ useEffect(() => {
 
 return (
         <>
-        <main id="blog-post">
+        <main id="blog-post" class="page-padded">
         <Container fluid>
-            <h1>Post Title</h1>
-            <p>Post Body Copy</p>
+            <h1>{state.currentPost.title}</h1>
+            <p>{state.currentPost.post}</p>
             <Link to="/blog">Back to Archives</Link>
         </Container>
         </main>
