@@ -6,6 +6,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { SET_CURRENT_POST } from "../../utils/actions";
 import API from "../../utils/API";
 import { Link, useParams } from "react-router-dom";
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 function Blog_Post() {
 
@@ -29,7 +30,7 @@ return (
         <main id="blog-post" class="page-padded">
         <Container fluid>
             <h1>{state.currentPost.title}</h1>
-            <p>{state.currentPost.post}</p>
+            <p>{ReactHtmlParser(state.currentPost.post)}</p>
             <Link to="/blog">Back to Archives</Link>
         </Container>
         </main>
