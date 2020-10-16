@@ -73,7 +73,7 @@ function Blog_Editor() {
   }
 
   return (
-      <main className="blog-editor">
+      <main className="blog-editor page-padded">
       {html()}
       <form>
         <hr></hr>

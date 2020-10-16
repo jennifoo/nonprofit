@@ -33,14 +33,14 @@ function Blog_Snippet() {
     <div key={elem._id} className="result-div">
       <h2>{elem.title}</h2>
       <p>{ReactHtmlParser(elem.post.substring(0,1000))} [...]</p>
-      <Link to={"/api/post/" + elem._id}><button>Read More</button></Link>
+      <Link to={"/api/post/" + elem._id}><button class="bx">Read More</button></Link>
     </div>
   ))
   }
 
   return(
     <>
-    <Row className="blog-snippet">
+    <Row className="blog-snippet page-padded">
       <Col>
         {html()}
       </Col>

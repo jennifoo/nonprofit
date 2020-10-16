@@ -14,7 +14,7 @@ function Feature() {
         <p>
         Do you want the latest information and updates on human trafficking in Houston? Come to Free the Captives’ 10th Annual Houston Human Trafficking Conference! This is a fantastic opportunity to learn about human trafficking from the experts and how you can get involved in fighting this horrific crime.
         </p>
-        <button>Read More</button>
+        <button class="bx">Read More</button>
       </Col>
     </Row>
   </>

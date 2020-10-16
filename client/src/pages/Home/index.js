@@ -16,7 +16,7 @@ return (
             <Col>
             <h1>— Free The Captives Mission —</h1>
             <p>We rescue and restore teenaged sex trafficking victims by working with law enforcement and providing rescued victims with support groups, mentoring, jobs, material assistance, and other direct services.</p>
-            <button>Learn More</button>
+            <button class="bx">Learn More</button>
             </Col>
         </Row>
         </section>
@@ -28,7 +28,7 @@ return (
             <Col>
             <h2>Human Sex Trafficking in Houston</h2>
             <p>The average age of girls being trafficked is between the ages of 12 to 14 years old. We also engage and mobilize volunteers from the community while partnering with non-profits and government agencies in the fight against modern day slavery, you can join us in the fight against human slavery.</p>
-            <button>Fight Slavery</button>
+            <button class="bx">Fight Slavery</button>
             </Col>
         </Row>
         </section>
