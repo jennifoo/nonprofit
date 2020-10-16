@@ -65,6 +65,12 @@ button {
   width: 1100px;
 }
 
+/* Enewsletter Bar */
+.button-login {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
 
 /* Overide Bootstrap */
 @media (min-width: 992px) {

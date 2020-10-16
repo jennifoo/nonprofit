@@ -9,6 +9,7 @@
 - Format Blog Editor Page
 - Update Blog Listing Page
 - Individual Blog Pages
+- Add-Ons: Ability to do list items on Editor/Images
 */
 
 import React, { useRef, useEffect } from 'react';

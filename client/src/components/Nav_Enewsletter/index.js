@@ -1,6 +1,7 @@
 import React from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
 
 
 function Nav_Enewsletter() {
@@ -12,6 +13,7 @@ function Nav_Enewsletter() {
       <input placeholder="Last Name"></input>
       <input placeholder="Email Address"></input>
       <button>Sign Up</button>
+      <Link to="/login"><button className="button-login">Login</button></Link>
       </Col>
     </Row>
   )
