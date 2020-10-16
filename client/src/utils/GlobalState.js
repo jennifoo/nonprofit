@@ -1,5 +1,5 @@
 import React, { createContext, useReducer, useContext } from "react";
-import { STORE_RESULTS, ADD_POST } from "./actions";
+import { STORE_RESULTS, ADD_POST, SET_CURRENT_POST } from "./actions";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -17,26 +17,11 @@ const reducer = (state, action) => {
         ...state,
         posts: [...state.posts, action.post]
       };
-
-  // STORE SEARCH RESULTS
-  // case SHOW_POSTS:
-  //   return {
-  //     ...state,
-  //     posts: action.posts
-  //   };
-
-    // case ADD_POST:
-    // return [
-    //   ...state,
-    //   posts: [...action.post]
-    // ];
-
-  // case SHOW_SAVED:
-  //   return {
-  //     ...state,
-  //     books: [...action.books]
-  //   };
-
+    case SET_CURRENT_POST:
+      return {
+        ...state,
+        currentPost: action.currentPst
+      };
   // case DELETE_BOOK:
   //   return {
   //     ...state,
@@ -51,7 +36,8 @@ const reducer = (state, action) => {
 
 const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
-    posts: []
+    posts: [],
+    currentPost: {}
   });
 
   return <Provider value={[state, dispatch]} {...props} />;

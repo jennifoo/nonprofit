@@ -7,5 +7,8 @@ export default {
   },
   getDbPost: function() {
     return axios.get("/api/post")
+  },
+  getPost: function(id) {
+    return axios.get("/api/post/" + id);
   }
 };

@@ -8,6 +8,7 @@
 - Packages to add: Editor and HTML Parser ***DONE***
 - Format Blog Editor Page
 - Update Blog Listing Page
+- Individual Blog Pages
 */
 
 import React, { useRef, useEffect } from 'react';
@@ -60,13 +61,13 @@ function Blog_Editor() {
 
   }
 
-  console.log(state);
+  // console.log(state);
 
   let html = function(){
     return state.posts.map((elem) => (
     <div key={elem._id} className="result-div">
       <h2>{elem.title}</h2>
-      <p>{ReactHtmlParser(elem.post.substring(0,1000))}</p> 
+      <p>{ReactHtmlParser(elem.post.substring(0,1000))} [...]</p> 
     </div>
   ))
   }
