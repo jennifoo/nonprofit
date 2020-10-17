@@ -13,7 +13,7 @@ function Nav_Enewsletter() {
       <input placeholder="Last Name"></input>
       <input placeholder="Email Address"></input>
       <button>Sign Up</button>
-      <Link to="/login"><button className="button-login">Login</button></Link>
+      <Link to="/signup"><button className="button-login">Portal</button></Link>
       </Col>
     </Row>
   )

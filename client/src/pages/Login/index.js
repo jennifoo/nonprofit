@@ -8,7 +8,7 @@ function Login() {
   
   return (
       <main className="login-page page-padded">
-      <h1>Registration Form</h1>
+      <h1>Login</h1>
       <form method="POST" action="/api/user/login" className="login">
         <div>
             <label for="exampleInputUser">Username: </label>
