@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Feature from '../../components/Feature';
-
+import fcopy from './feature.json';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 function Home() {
 return (
@@ -33,9 +34,21 @@ return (
         </Row>
         </section>
 
+        {fcopy.map((elem) => (
+          <Feature 
+          image={elem.image}
+          title={elem.title}
+          subtitle={elem.subtitle}
+          snippet={ReactHtmlParser(elem.snippet)}
+          link={elem.link}
+          />
+        ))
+        }
+        
+        {/*         
         <Feature />
         <Feature />
-        <Feature />
+        <Feature /> */}
         </Container>
         </main>
         </>

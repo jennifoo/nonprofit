@@ -1,24 +1,24 @@
 import React from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 
-function Feature() {
+
+function Feature(props) {
   return(
     <>
     <Row className="feature-section">
       <Col>
-      <div className="feature-image"><img src={require('../../images/Conference-in-color-Skyline-IG-2020.png')} /></div>
-        <h3>Get Educated on the Core Issues of Human Trafficking</h3>
-        <h4>Houston Human Trafficking Conference</h4>
-        <p>
-        Do you want the latest information and updates on human trafficking in Houston? Come to Free the Captives’ 10th Annual Houston Human Trafficking Conference! This is a fantastic opportunity to learn about human trafficking from the experts and how you can get involved in fighting this horrific crime.
-        </p>
-        <button class="bx">Read More</button>
+      <div className="feature-image"><img src={require('../../images/'+ props.image)} /></div>
+        <h3>{props.title}</h3>
+        <h4>{props.subtitle}</h4>
+        <p>{props.snippet}</p>
+        <Link to={props.link}><button class="bx">Read More</button></Link>
       </Col>
     </Row>
   </>
   )
 }
-
+{/* <img src={require('../../images/'+ props.image)} /> */}
 export default Feature;

@@ -6,7 +6,7 @@
 - User login and authentication ***DONE***
 - ROUTES to display Individual Blog Pages ***DONE***
 
-- Set up props for homepage feature component
+- Set up props for homepage feature component ***DONE***
 - Set up and populate About page, hide other nav items outside of MVP
 - User Register/Login Page - Add basic UI functionality that makes sense
 - Format Blog Editor Page (Reduce text and make 2 columns)
