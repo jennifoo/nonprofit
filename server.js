@@ -9,7 +9,7 @@ const bcrypt = require("bcryptjs");
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const app = express();
-const User = require("./models/user");
+const db = require("./models");
 
 const routes = require("./routes");
 
@@ -69,12 +69,12 @@ app.post("/api/user/login", (req, res, next) => {
 });
 //POST ROUTE: REGISTER USER
 app.post("/api/user/register", (req, res) => {
-  User.findOne({ username: req.body.username }, async (err, doc) => {
+  db.User.findOne({ username: req.body.username }, async (err, doc) => {
     if (err) throw err;
     if (doc) res.send("This User Already Exists in the Database");
     if (!doc) {
       const hashedPass = await bcrypt.hash(req.body.password, 11);
-      const newUser = new User({
+      const newUser = new db.User({
         username: req.body.username,
         password: hashedPass,
       });
