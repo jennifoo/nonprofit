@@ -1,15 +1,19 @@
 /* NEXT STEPS
 - Database seeded with seed file ***DONE***
 - Mongoose Schema setup ***DONE***
-- Get all to display all post to page ***DONE***
-- User login and authentication
-- Hide API keys and other sensitive info
+- GET ROUTE to display all post to page ***DONE***
 - Get HTML parser ***DONE***
-- Packages to add: Editor and HTML Parser ***DONE***
-- Format Blog Editor Page
-- Update Blog Listing Page
-- Individual Blog Pages
-- Add-Ons: Ability to do list items on Editor/Images
+- User login and authentication ***DONE***
+- ROUTES to display Individual Blog Pages ***DONE***
+
+- Set up props for homepage feature component
+- Set up and populate About page, hide other nav items outside of MVP
+- User Register/Login Page - Add basic UI functionality that makes sense
+- Format Blog Editor Page (Reduce text and make 2 columns)
+- Format Blog Listing Page (image)
+- Social Feed (find quick way to embed Facebook)
+- Hide API keys and other sensitive info
+- ICE-BOX: Ability to do bulleted list items on Editor/Images, Pagination, Enewsletter signup?
 */
 
 import React, { useRef, useEffect } from 'react';
