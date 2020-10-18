@@ -1,6 +1,10 @@
 import React from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faFacebook } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
 
 function Footer() {
@@ -15,19 +19,19 @@ function Footer() {
       <Col>
         <h4>Quick Links</h4>
         <ul>
-          <li>
-          Consectetur Adipiscing Elit
-          </li>
-          <li>
-          Lorem Ipsum Dolor
-          </li>
-          <li>
-          Mattis Sed Arcu
-          </li>
-          <li>
-          Risus Pellentesque Posuere
-          </li>
+          <Link to="/about">
+          <li>Mission</li>
+          </Link>
+          <Link to="/blog">
+          <li>Blog</li>
+          </Link>
+          <Link to="/signup">
+          <li>Portal</li>
+          </Link>
         </ul>
+        <p className="emphasis">Follow us on Social Media:</p>
+        <Link to="https://www.facebook.com/FreetheCaptivesHouston"><FontAwesomeIcon icon={faFacebookSquare} /></Link>
+        <Link to="https://twitter.com/freethecaptives?lang=en"><FontAwesomeIcon icon={faTwitterSquare} /></Link>
       </Col>
       <Col>
         <h4>Social Feed</h4>

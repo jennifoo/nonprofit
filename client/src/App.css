@@ -53,6 +53,10 @@ html hr {
   margin-bottom: 50px;
 }
 
+p.emphasis {
+  font-weight: 600;
+}
+
 /* NAV */
 #nav {
   background-color: #82d6dd;
@@ -343,3 +347,32 @@ input.bx {
   padding: 75px 50px 50px 50px;
   min-height: 450px;
 }
+#footer a svg {
+  color: #000;
+  font-size: 25pt;
+  margin-right: 15px;
+}
+#footer a:hover svg {
+  color: #666;
+  transition: .25s;
+}
+
+#footer ul {
+  padding-inline-start: 25px;
+}
+#footer ul a {
+  color: #000;
+  text-decoration: underline;
+}
+
+#footer ul a:hover {
+  color: #666;
+}
+
+#footer .col:nth-child(2) {
+  padding-left: 50px;
+}
+
+/* nav .nav-item:first-child .nav-link{
+  padding-left: 0 !important;
+} */

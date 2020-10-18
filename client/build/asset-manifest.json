@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c49f386.chunk.css",
-    "main.js": "/static/js/main.22752887.chunk.js",
-    "main.js.map": "/static/js/main.22752887.chunk.js.map",
+    "main.css": "/static/css/main.7e66e204.chunk.css",
+    "main.js": "/static/js/main.9ce3df25.chunk.js",
+    "main.js.map": "/static/js/main.9ce3df25.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f65105ae.js",
     "runtime-main.js.map": "/static/js/runtime-main.f65105ae.js.map",
     "static/css/2.80dce9aa.chunk.css": "/static/css/2.80dce9aa.chunk.css",
-    "static/js/2.0a203a39.chunk.js": "/static/js/2.0a203a39.chunk.js",
-    "static/js/2.0a203a39.chunk.js.map": "/static/js/2.0a203a39.chunk.js.map",
+    "static/js/2.ec9043de.chunk.js": "/static/js/2.ec9043de.chunk.js",
+    "static/js/2.ec9043de.chunk.js.map": "/static/js/2.ec9043de.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3926e6646f0cd1b9aacb5de943df3acc.js": "/precache-manifest.3926e6646f0cd1b9aacb5de943df3acc.js",
+    "precache-manifest.87441a8fdf4ea215183dc52f5e3fe860.js": "/precache-manifest.87441a8fdf4ea215183dc52f5e3fe860.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.80dce9aa.chunk.css.map": "/static/css/2.80dce9aa.chunk.css.map",
-    "static/css/main.9c49f386.chunk.css.map": "/static/css/main.9c49f386.chunk.css.map",
-    "static/js/2.0a203a39.chunk.js.LICENSE.txt": "/static/js/2.0a203a39.chunk.js.LICENSE.txt",
+    "static/css/main.7e66e204.chunk.css.map": "/static/css/main.7e66e204.chunk.css.map",
+    "static/js/2.ec9043de.chunk.js.LICENSE.txt": "/static/js/2.ec9043de.chunk.js.LICENSE.txt",
+    "static/media/50-for-Freedom-IG.png": "/static/media/50-for-Freedom-IG.de529c95.png",
     "static/media/Conference-in-color-Skyline-IG-2020.png": "/static/media/Conference-in-color-Skyline-IG-2020.4f4c4c83.png",
-    "static/media/App.css": "/static/media/free-the-captives-girls-banner.12067e85.jpg",
-    "static/media/free-the-captives-logo.png": "/static/media/free-the-captives-logo.92b340de.png"
+    "static/media/FTC-Candles-NC-Text1-700x700.jpg": "/static/media/FTC-Candles-NC-Text1-700x700.f5345bc3.jpg",
+    "static/media/free-the-captives-girls-banner.jpg": "/static/media/free-the-captives-girls-banner.12067e85.jpg",
+    "static/media/free-the-captives-logo.png": "/static/media/free-the-captives-logo.92b340de.png",
+    "static/media/the-mission-of-FTC1.png": "/static/media/the-mission-of-FTC1.37a48a92.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f65105ae.js",
     "static/css/2.80dce9aa.chunk.css",
-    "static/js/2.0a203a39.chunk.js",
-    "static/css/main.9c49f386.chunk.css",
-    "static/js/main.22752887.chunk.js"
+    "static/js/2.ec9043de.chunk.js",
+    "static/css/main.7e66e204.chunk.css",
+    "static/js/main.9ce3df25.chunk.js"
   ]
 }
