@@ -6,7 +6,8 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { STORE_RESULTS } from "../../utils/actions";
 import API from "../../utils/API";
 import ReactHtmlParser from 'react-html-parser';
-import { BrowserRouter as Link } from "react-router-dom";
+// import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 function BlogSnippet() {
@@ -47,7 +48,7 @@ function BlogSnippet() {
             <div key={elem._id} className="result-div">
               <h2>{elem.title}</h2>
               <div>{ReactHtmlParser(elem.post.substring(0,500))} [...]</div>
-              <a className="bx" href={"/api/post/" + elem._id}>Read More</a>
+              <Link className="bx" to={"/api/post/" + elem._id}>Read More</Link>
             </div>
         ))}
       </Col>
@@ -57,3 +58,5 @@ function BlogSnippet() {
 }
 
 export default BlogSnippet;
+
+{/* <a className="bx" href={"/api/post/" + elem._id}>Read More</a> */}
