@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -33,9 +33,9 @@ function Navigation() {
             <Nav.Item>
               <Nav.Link href="/blog">Blog</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link href="/blog-editor">Edit</Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

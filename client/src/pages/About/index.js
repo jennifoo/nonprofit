@@ -8,7 +8,7 @@ function About() {
 return (
         <>
         <Banner h1="About" />
-        <main id="about" class="page-padded">
+        <main id="about" className="page-padded">
         <Container fluid>
             <h2>Mission</h2>
             <p>Free the Captives is a faith-based anti-human trafficking 501(c)(3) non-profit that fights the exploitation and trafficking of Houston’s youth. We engage and mobilize the Christian community while partnering with non-profits, law enforcement, and government agencies in the fight against modern day slavery.</p>

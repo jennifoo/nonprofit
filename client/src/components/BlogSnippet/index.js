@@ -5,11 +5,11 @@ import Col from 'react-bootstrap/Col';
 import { useStoreContext } from "../../utils/GlobalState";
 import { STORE_RESULTS } from "../../utils/actions";
 import API from "../../utils/API";
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 import { BrowserRouter as Link } from "react-router-dom";
 
 
-function Blog_Snippet() {
+function BlogSnippet() {
 
   const [state, dispatch] = useStoreContext();
 
@@ -28,25 +28,32 @@ function Blog_Snippet() {
     []
   );
 
-  let html = function(){
-    return state.posts.map((elem) => (
-    <div key={elem._id} className="result-div">
-      <h2>{elem.title}</h2>
-      <p>{ReactHtmlParser(elem.post.substring(0,500))} [...]</p>
-      <Link to={"/api/post/" + elem._id}><button class="bx">Read More</button></Link>
-    </div>
-  ))
-  }
+  // let html = function(){
+  //   return state.posts.map((elem) => (
+  //   <div key={elem._id} className="result-div">
+  //     <h2>{elem.title}</h2>
+  //     <div>{ReactHtmlParser(elem.post.substring(0,500))} [...]</div>
+  //     <Link to={"/api/post/" + elem._id}><button className="bx">Read More</button></Link>
+  //   </div>
+  // ))
+  // }
 
   return(
     <>
+    
     <Row className="blog-snippet page-padded">
       <Col>
-        {html()}
+        {state.posts.map((elem) => (
+            <div key={elem._id} className="result-div">
+              <h2>{elem.title}</h2>
+              <div>{ReactHtmlParser(elem.post.substring(0,500))} [...]</div>
+              <a className="bx" href={"/api/post/" + elem._id}>Read More</a>
+            </div>
+        ))}
       </Col>
     </Row>
   </>
   )
 }
 
-export default Blog_Snippet;
+export default BlogSnippet;

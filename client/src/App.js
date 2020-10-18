@@ -6,14 +6,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // COMPONENTS
 import Navigation from './components/Navigation';
-import Nav_Enewsletter from './components/Nav_Enewsletter';
+import NavEnewsletter from './components/NavEnewsletter';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
-import Blog_Editor from './pages/Blog_Editor';
-import Blog_Post from './pages/Blog_Post';
+import BlogEditor from './pages/BlogEditor';
+import BlogPost from './pages/BlogPost';
 import Signup from './pages/Signup';
-import Login from './pages/Login';
 import Footer from './components/Footer'
 
 
@@ -24,7 +23,7 @@ function App() {
     <>
     <Router>
     <StoreProvider>
-    <Nav_Enewsletter />
+    <NavEnewsletter />
     <Navigation />
     <Switch>
       <Route exact path="/">
@@ -40,19 +39,15 @@ function App() {
         <Footer />
       </Route>
       <Route exact path="/blog-editor">
-        <Blog_Editor />
+        <BlogEditor />
         <Footer />
       </Route>
       <Route exact path="/api/post/:id">
-        <Blog_Post />
+        <BlogPost />
         <Footer />
       </Route>
       <Route exact path="/signup">
         <Signup />
-        <Footer />
-      </Route>
-      <Route exact path="/login">
-        <Login />
         <Footer />
       </Route>
     </Switch>

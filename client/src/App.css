@@ -31,10 +31,15 @@ body .container-fluid {
   padding-right: 0;
 }
 
-button {
+button, a.bx {
   border: none;
   border-radius: 0;
   font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+
+
 }
 
 .page-padded {
@@ -143,7 +148,7 @@ html hr {
 .feature-section.row button,
 */
 
-#root button.bx, input.bx
+#root button.bx, input.bx, a.bx
  {
   border: solid 1px #000;
   padding: 5px 20px;
@@ -154,10 +159,11 @@ html hr {
   transition: .25s;
 }
 
-#root button.bx:hover, input.bx:hover {
+#root button.bx:hover, input.bx:hover, a.bx:hover {
   background-color: #16a0a5;
   color: #fff;
   border-color: #16a0a5;
+  text-decoration: none;
 }
 
 /* SECTION: MISSION */

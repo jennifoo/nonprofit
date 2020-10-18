@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import { Link } from "react-router-dom";
 
 
-function Nav_Enewsletter() {
+function NavEnewsletter() {
   return(
     <Row className="enewsletter-bar">
       <Col>
@@ -21,4 +21,4 @@ function Nav_Enewsletter() {
   )
 }
 
-export default Nav_Enewsletter;
+export default NavEnewsletter;

@@ -12,6 +12,7 @@ const app = express();
 const db = require("./models");
 
 const routes = require("./routes");
+const postController = require("./controllers/postController");
 
 
 // Serve up static assets (usually on heroku)
@@ -19,16 +20,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/ftcblogg",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
-  () => {
-    console.log("Mongoose Is Connected");
-  }
-);
+
 
 // MIDDLEWARE
 app.use(bodyParser.json());
@@ -88,8 +80,26 @@ app.get("/api/user/user", (req, res) => {
   res.send(req.user); // The req.user stores the authenticated user.
 });
 
+// ORIGINAL MIDDLEWARE
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+
 // NOTE: important to put this below the passport middleware otherwise the registration/authentication won't go through.
 app.use(routes);
+
+// app.get("/api/post/:id", postController.findById);
+
+
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/ftcblogg",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  () => {
+    console.log("Mongoose Is Connected");
+  }
+);
 
 // Start Server
 app.listen(PORT, function() {
@@ -97,12 +107,5 @@ app.listen(PORT, function() {
 });
 
 
-// ORIGINAL MIDDLEWARE
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
-
-
-
-// { authenticate: true }
 
 

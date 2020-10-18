@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from '../../components/Banner'
 import Container from 'react-bootstrap/Container'
-import Blog_Snippet from '../../components/Blog_Snippet';
+import BlogSnippet from '../../components/BlogSnippet';
 
 function Blog() {
 return (
@@ -9,7 +9,7 @@ return (
         <main id="blog">
         <Container fluid>
             <Banner h1="Blog" />
-            <Blog_Snippet />
+            <BlogSnippet />
         </Container>
         </main>
         </>

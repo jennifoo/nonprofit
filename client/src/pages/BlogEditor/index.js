@@ -23,12 +23,13 @@ import { Editor } from "@tinymce/tinymce-react";
 import { useStoreContext } from "../../utils/GlobalState";
 import { STORE_RESULTS, ADD_POST } from "../../utils/actions";
 import API from "../../utils/API";
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+// import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-function Blog_Editor() {
+function BlogEditor() {
   const titleRef = useRef();
 
   const [state, dispatch] = useStoreContext();
@@ -111,4 +112,4 @@ function Blog_Editor() {
 
 
 
-export default Blog_Editor;
+export default BlogEditor;

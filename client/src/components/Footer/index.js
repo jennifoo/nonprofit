@@ -31,7 +31,7 @@ function Footer() {
       </Col>
       <Col>
         <h4>Social Feed</h4>
-        <div class="fb-page" data-href="https://www.facebook.com/FreetheCaptivesHouston" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/FreetheCaptivesHouston" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FreetheCaptivesHouston">Free the Captives</a></blockquote></div>
+        <div className="fb-page" data-href="https://www.facebook.com/FreetheCaptivesHouston" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/FreetheCaptivesHouston" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FreetheCaptivesHouston">Free the Captives</a></blockquote></div>
       </Col>
     </Row>
   )
