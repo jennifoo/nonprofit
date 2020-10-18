@@ -13,6 +13,7 @@
 - Format Blog Listing Page (image)
 - Social Feed (find quick way to embed Facebook)
 - Hide API keys and other sensitive info
+- Add Facebook, Twitter and LinkedIn buttons to footer.
 - ICE-BOX: Ability to do bulleted list items on Editor/Images, Pagination, Enewsletter signup?
 */
 

@@ -9,7 +9,7 @@ function Footer() {
       <Col>
         <h4>About Us</h4>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu cursus diam, sed ullamcorper enim. Phasellus congue facilisis congue. Donec et euismod quam. Sed et ligula in lectus vulputate consequat. Nulla congue lacus elit, sed imperdiet ipsum fringilla posuere. Phasellus vel pharetra.
+        Free the Captives is a faith-based anti-human trafficking 501(c)(3) non-profit that fights the exploitation and trafficking of Houston’s youth. We engage and mobilize the Christian community while partnering with non-profits, law enforcement, and government agencies in the fight against modern day slavery.
         </p>
       </Col>
       <Col>
@@ -31,6 +31,7 @@ function Footer() {
       </Col>
       <Col>
         <h4>Social Feed</h4>
+        <div class="fb-page" data-href="https://www.facebook.com/FreetheCaptivesHouston" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/FreetheCaptivesHouston" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FreetheCaptivesHouston">Free the Captives</a></blockquote></div>
       </Col>
     </Row>
   )
