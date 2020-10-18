@@ -21,7 +21,7 @@ function Navigation() {
             <Nav.Item>
               <Nav.Link href="/about">About</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link href="/our-work">Our Work</Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -29,7 +29,7 @@ function Navigation() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link href="/about">Contact Us</Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
             <Nav.Item>
               <Nav.Link href="/blog">Blog</Nav.Link>
             </Nav.Item>
