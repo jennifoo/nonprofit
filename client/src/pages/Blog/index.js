@@ -1,15 +1,15 @@
 import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Banner from '../../components/Banner'
 import Container from 'react-bootstrap/Container'
+import Blog_Snippet from '../../components/Blog_Snippet';
 
 function Blog() {
 return (
         <>
         <main id="blog">
         <Container fluid>
-            <Banner />
+            <Banner h1="Blog" />
+            <Blog_Snippet />
         </Container>
         </main>
         </>

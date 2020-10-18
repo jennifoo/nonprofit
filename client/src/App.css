@@ -249,10 +249,19 @@ section#awareness-section h2{
 /* Blog Page */
 .banner-image {
   background-color: #eee;
+  background-repeat: no-repeat;
+  background-image: url('./images/free-the-captives-girls-banner.jpg');
+  background-size: cover;
+  background-position: 50% 40%;
 }
 .banner-image .col{
   min-height: 300px;
-  padding: 25px 25px 25px 25px;
+  padding: 4vw 4vw;
+}
+.banner-image .col h1 {
+  font-size: 4rem;
+  opacity: .75;
+  mix-blend-mode: multiply;
 }
 .result-div {
   margin-bottom: 50px;
