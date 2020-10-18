@@ -71,11 +71,18 @@ html hr {
 }
 
 /* Enewsletter Bar */
+.enewsletter-bar {
+  height: 30px;
+}
+.enewsletter-group {
+  display: none;
+}
 .button-login {
   position: absolute;
   right: 0;
-  top: 7px;
+  /* top: 7px; */
 }
+
 
 /* Overide Bootstrap */
 @media (min-width: 992px) {

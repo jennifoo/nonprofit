@@ -8,11 +8,13 @@ function Nav_Enewsletter() {
   return(
     <Row className="enewsletter-bar">
       <Col>
+      <div className="enewsletter-group">
       <h6>Get The Latest Updates</h6>
       <input placeholder="First Name"></input>
       <input placeholder="Last Name"></input>
       <input placeholder="Email Address"></input>
       <button>Sign Up</button>
+      </div>
       <Link to="/signup"><button className="button-login">Portal</button></Link>
       </Col>
     </Row>
