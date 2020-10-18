@@ -9,9 +9,9 @@
 - Set up and populate About page, hide other nav items outside of MVP ***DONE***
 - Format Blog Listing Page (image) ***DONE***
 - Social Feed (find quick way to embed Facebook) ***DONE***
+- User Register/Login Page - Add basic UI functionality & Redirect ***DONE***
+- Format Blog Editor Page (Reduce text and make 2 columns) ***DONE***
 
-- User Register/Login Page - Add basic UI functionality that makes sense
-- Format Blog Editor Page (Reduce text and make 2 columns)
 - Hide API keys and other sensitive info
 - Add Facebook, Twitter and LinkedIn buttons to footer.
 

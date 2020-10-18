@@ -32,7 +32,7 @@ function Blog_Snippet() {
     return state.posts.map((elem) => (
     <div key={elem._id} className="result-div">
       <h2>{elem.title}</h2>
-      <p>{ReactHtmlParser(elem.post.substring(0,1000))} [...]</p>
+      <p>{ReactHtmlParser(elem.post.substring(0,500))} [...]</p>
       <Link to={"/api/post/" + elem._id}><button class="bx">Read More</button></Link>
     </div>
   ))
