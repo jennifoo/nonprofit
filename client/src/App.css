@@ -278,6 +278,18 @@ section#awareness-section h2{
   padding: 50px 50px 0 50px;
 } */
 
+/* PORTAL */
+.login-page label {
+  margin-right: 10px;
+}
+
+.login-page input {
+  font-size: 10pt;
+  padding: 0 2px 0;
+}
+
+
+
 
 /* Footer */
 #footer {

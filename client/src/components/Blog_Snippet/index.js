@@ -1,12 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { useStoreContext } from "../../utils/GlobalState";
-import { STORE_RESULTS, ADD_POST } from "../../utils/actions";
+import { STORE_RESULTS } from "../../utils/actions";
 import API from "../../utils/API";
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 
 function Blog_Snippet() {

@@ -53,21 +53,7 @@ require("./passportConfig")(passport);
 
 
 // ROUTES
-// POST ROUTE: USER LOGIN
-app.post("/api/user/login", (req, res, next) => {
-  passport.authenticate("local", (err, user, info) => {
-    if (err) throw err;
-    if (!user) res.send("This User Does Not Exist");
-    else {
-      req.logIn(user, (err) => {
-        if (err) throw err;
-        res.send("User Has Successfully Logged In");
-        console.log(req.user);
-      });
-    }
-  })(req, res, next);
-});
-//POST ROUTE: REGISTER USER
+// POST ROUTE: REGISTER USER
 app.post("/api/user/register", (req, res) => {
   db.User.findOne({ username: req.body.username }, async (err, doc) => {
     if (err) throw err;
@@ -83,6 +69,21 @@ app.post("/api/user/register", (req, res) => {
     }
   });
 });
+// POST ROUTE: USER LOGIN
+app.post("/api/user/login", (req, res, next) => {
+  passport.authenticate("local", (err, user, info) => {
+    if (err) throw err;
+    if (!user) res.send(false);
+    else {
+      req.logIn(user, (err) => {
+        if (err) throw err;
+        res.send(true);
+        console.log(req.user);
+      });
+    }
+  })(req, res, next);
+});
+// GET ROUTE
 app.get("/api/user/user", (req, res) => {
   res.send(req.user); // The req.user stores the authenticated user.
 });
@@ -102,6 +103,6 @@ app.listen(PORT, function() {
 
 
 
-
+// { authenticate: true }
 
 
