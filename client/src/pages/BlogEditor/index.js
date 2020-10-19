@@ -1,23 +1,3 @@
-/* NEXT STEPS
-- Database seeded with seed file ***DONE***
-- Mongoose Schema setup ***DONE***
-- GET ROUTE to display all post to page ***DONE***
-- Get HTML parser ***DONE***
-- User login and authentication ***DONE***
-- ROUTES to display Individual Blog Pages ***DONE***
-- Set up props for homepage feature component ***DONE***
-- Set up and populate About page, hide other nav items outside of MVP ***DONE***
-- Format Blog Listing Page (image) ***DONE***
-- Social Feed (find quick way to embed Facebook) ***DONE***
-- User Register/Login Page - Add basic UI functionality & Redirect ***DONE***
-- Format Blog Editor Page (Reduce text and make 2 columns) ***DONE***
-
-- Hide API keys and other sensitive info
-- Add Facebook, Twitter and LinkedIn buttons to footer.
-
-- ICE-BOX: Ability to do bulleted list items on Editor/Images, Pagination, Enewsletter signup?
-*/
-
 import React, { useRef, useEffect } from 'react';
 import { Editor } from "@tinymce/tinymce-react";
 import { useStoreContext } from "../../utils/GlobalState";
@@ -30,8 +10,9 @@ import Col from 'react-bootstrap/Col';
 
 
 function BlogEditor() {
+  const api_key = process.env.REACT_APP_API_KEY;
   const titleRef = useRef();
-
+  
   const [state, dispatch] = useStoreContext();
 
   useEffect(
@@ -90,7 +71,7 @@ function BlogEditor() {
         <h1>Create a Blog Post</h1>
         <input className="title" name="title" placeholder="Title" ref={titleRef}></input>
         <Editor
-         apiKey="26mjhd3w4g3zkyxeqxkvveljjgkxgo6e91u6g96ira550mw1"
+         apiKey={api_key}
          init={{
             height: 200,
             menubar: false
