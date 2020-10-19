@@ -10,13 +10,13 @@ import { faFacebookSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-
 function Footer() {
   return(
     <Row id="footer">
-      <Col>
+      <Col md={4} className="column">
         <h4>About Us</h4>
         <p>
         Free the Captives is a faith-based anti-human trafficking 501(c)(3) non-profit that fights the exploitation and trafficking of Houston’s youth. We engage and mobilize the Christian community while partnering with non-profits, law enforcement, and government agencies in the fight against modern day slavery.
         </p>
       </Col>
-      <Col>
+      <Col md={4} className="column">
         <h4>Quick Links</h4>
         <ul>
           <Link to="/about">
@@ -33,7 +33,7 @@ function Footer() {
         <Link to="https://www.facebook.com/FreetheCaptivesHouston"><FontAwesomeIcon icon={faFacebookSquare} /></Link>
         <Link to="https://twitter.com/freethecaptives?lang=en"><FontAwesomeIcon icon={faTwitterSquare} /></Link>
       </Col>
-      <Col>
+      <Col md={4} className="column">
         <h4>Social Feed</h4>
         <div className="fb-page" data-href="https://www.facebook.com/FreetheCaptivesHouston" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/FreetheCaptivesHouston" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FreetheCaptivesHouston">Free the Captives</a></blockquote></div>
       </Col>

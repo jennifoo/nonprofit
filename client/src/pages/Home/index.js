@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Feature from '../../components/Feature';
 import fcopy from './feature.json';
 import ReactHtmlParser from 'react-html-parser';
+import { Parallax } from 'react-parallax';
 
 function Home() {
 return (
@@ -22,7 +23,11 @@ return (
         </Row>
         </section>
 
-        <div id="mission-image"></div>
+        {/* <div id="mission-image"></div> */}
+        {/* <img src={require('../../images/'+ props.image)} */}
+        <Parallax bgImage={require('../../images/free-the-captives-girls-banner-4.jpg')} strength={-250}>
+            <div style={{ height: "550px"}}></div>
+        </Parallax>
         
         <section id="awareness-section">
         <Row className="awareness-statement">

@@ -194,13 +194,13 @@ section#mission-section h1{
 
 /* SECTION: IMAGE */
 
-#mission-image{
+/* #mission-image{
   background-image: url("./images/free-the-captives-girls-banner.jpg");
   height: 550px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 /* SECTION: AWARENESS */
 section#awareness-section {
@@ -369,10 +369,71 @@ input.bx {
   color: #666;
 }
 
-#footer .col:nth-child(2) {
+#footer .column:nth-child(2) {
   padding-left: 50px;
 }
 
 /* nav .nav-item:first-child .nav-link{
   padding-left: 0 !important;
 } */
+
+/* Media Query */
+@media all and (max-width: 1000px){
+#footer {
+  padding: 25px 10px 10px;
+  font-size: 11pt;
+  line-height: 1.3;
+}
+#footer .col:nth-child(2) {
+  padding-left: 15px;
+}
+
+}
+
+@media all and (max-width: 768px){
+#root .mission-statement.row {
+  margin-top: 0;
+}
+.mission-statement.row p {
+  font-size: 14pt;
+}
+.feature-section h3 {
+  position: relative;
+  left: initial;
+  top: initial;
+  font-size: 24pt;
+  margin-top: 145px;
+}
+.feature-image img {
+  max-height: 250px;
+  /* position: relative; */
+  left: initial;
+  top: -100px;
+}
+.feature-section {
+  justify-content: center;
+}
+.feature-section .col {
+  width: 95%;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  min-height: 457px;
+}
+html body {
+  font-size: 12pt;
+}
+#footer .column:nth-child(2) {
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+#footer p.emphasis {
+  margin-bottom: 5px;
+}
+
+}
+
+@media all and (max-width: 375px){
+
+}
