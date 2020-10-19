@@ -431,6 +431,17 @@ html body {
 #footer p.emphasis {
   margin-bottom: 5px;
 }
+/* About Us */
+.page-padded {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 40px;
+}
+
+img.image-max {
+  max-width: 250px;
+  margin-bottom: 25px;
+}
 
 }
 
