@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e8465b61e1065f29de23a262e96628c",
+    "revision": "278609048f5c69776d5c2be7fa5b0e71",
     "url": "/index.html"
   },
   {
-    "revision": "204ed0630c3b58dc9ca3",
+    "revision": "1da22992d971fb0c0c53",
     "url": "/static/css/2.80dce9aa.chunk.css"
   },
   {
-    "revision": "a7d6a3056f311c186f14",
-    "url": "/static/css/main.1a7d7588.chunk.css"
+    "revision": "963de30a68c74fd30e2b",
+    "url": "/static/css/main.cdc8ab1e.chunk.css"
   },
   {
-    "revision": "204ed0630c3b58dc9ca3",
-    "url": "/static/js/2.86c7a203.chunk.js"
+    "revision": "1da22992d971fb0c0c53",
+    "url": "/static/js/2.24ec4986.chunk.js"
   },
   {
     "revision": "b368356ff1e220097ea1fe61bc9e134f",
-    "url": "/static/js/2.86c7a203.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.24ec4986.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a7d6a3056f311c186f14",
-    "url": "/static/js/main.23147613.chunk.js"
+    "revision": "963de30a68c74fd30e2b",
+    "url": "/static/js/main.ffa84524.chunk.js"
   },
   {
     "revision": "2b8f580612459d80dc88",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "92b340deeef8ea760b1f4031d6004e33",
     "url": "/static/media/free-the-captives-logo.92b340de.png"
+  },
+  {
+    "revision": "417d2ad6a744012078b8a202c1fe9b45",
+    "url": "/static/media/hero-graphic.417d2ad6.png"
   },
   {
     "revision": "37a48a92d76fdb997ebc8cf3b259b2bf",
